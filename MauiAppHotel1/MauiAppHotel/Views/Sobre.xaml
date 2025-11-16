@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiAppHotel.Views.Sobre"
+    Title="Sobre">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="28"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               TextColor="#315C30"/>
+
+        <Frame Padding="20" CornerRadius="15" BackgroundColor="#EEEEEE">
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Nome do Desenvolvedor:"
+                       FontAttributes="Bold"
+                       TextColor="#315C30"/>
+
+                <Label Text="Fernando Onishi"
+                       FontSize="18" />
+
+                <Label Text="Ano de Desenvolvimento:"
+                       FontAttributes="Bold"
+                       Margin="0,10,0,0"
+                       TextColor="#315C30"/>
+
+                <Label Text="2025"
+                       FontSize="18" />
+
+                <Label Text="Aplicativo de Hotel desenvolvido para a atividade da Agenda 13 de Desenvolvimento de Sistemas"
+                       FontSize="14"
+                       TextColor="#444"/>
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
