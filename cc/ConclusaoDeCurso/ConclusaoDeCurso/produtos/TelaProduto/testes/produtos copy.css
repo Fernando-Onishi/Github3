@@ -1,0 +1,377 @@
+    @font-face{
+        font-family: Poppins;
+        src: url(/ConclusaoDeCurso/Fontes/Poppins/Poppins-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: MontSerrat;
+        src: url(/ConclusaoDeCurso/Fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+        font-family: Unifraktur;
+        src: url(/ConclusaoDeCurso/Fontes/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Kaushan;
+        src: url(/ConclusaoDeCurso/Fontes/Kaushan_Script/KaushanScript-Regular.ttf) format('truetype');
+    }
+
+    body{
+        margin: auto;
+        background-color: black;
+        overflow-x: hidden;
+        background-position: center;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    main{
+        max-width: 1200px;
+        height: 220vh;
+        background-color: #f8f9fa;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 0 auto;
+        margin-top: 250px;
+        text-align: center; 
+        border: 6px solid #6e1e23;
+    }
+
+    header{
+        background-color: black;
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 6px solid #6e1e23;
+        margin-bottom: 0px;
+        position: fixed;
+        top: 0;
+        z-index: 7;
+    }
+
+    footer{
+        background-color: #6e1e23;
+        height: 19vh;
+        margin-top: 85px;
+        width: 100%;
+        border-top: 6px solid #6e1e23;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p{
+        color: white;
+        margin: 0;
+    }
+
+    footer hr{
+        width: 50vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .COMECO{
+        width: 76vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .COMECO a{
+        margin: 0 110px;
+    }
+
+    /*BOTOES*/
+    #entrar{
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        transition: transform 0.5s ease-in-out;
+        background-color: black;
+    }
+
+    /* ANIMAÇÃO BOTÃO ENTRAR */
+    #entrar:hover{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    /* BOTÕES DO HEADER */
+    #comeco{
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        position: relative;
+    }
+
+    /* ANIMAÇÃO BOTÕES DO HEADER */
+    #comeco::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        background-color: red;
+        transition: width 0.5s;
+    }
+
+    #comeco:hover::after{
+        width: 100%;
+    }
+
+    .TituloMain{
+        font-size: 75px;
+        margin: 0 auto;
+        font-family: "Kaushan";
+        margin-top: 30px;
+    }
+
+    /* ANIMAÇÃO LOGO */
+
+    #imgL{
+        transition: transform 0.2s ease-in;
+    }
+
+    #imgL:hover{
+        transform: scale(1.1);
+    }
+
+    /* Produtos */
+    .Imgproduto{
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    .produto:hover{
+        transform: scale(1.1);
+        border: 6px solid black;
+        box-shadow: 0 0 50px gray;
+    }
+
+    .produto{
+        width: 350px;
+        height: 560px;
+        text-align: center;
+        margin-top: 75px;
+        border: 6px solid lightgray;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .carro{
+        font-size: 24px;
+        font-family: MontSerrat;
+        margin-bottom: -5px;
+    }
+
+    .INFO{
+        height: 150px;
+    }
+
+    .INFO p{
+        margin-top: 20px;
+    }
+
+    /* SEPARADOR */
+    hr{
+        width: 348px;
+        color: white;
+        background-color: lightgray;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        height: 3px;
+
+    }
+
+    /* Informações do carro */
+
+    .infoP{
+        display: flex;
+        justify-content: space-around;
+    }   
+
+    .informacoes{
+        font-size: 18px;
+        margin-top: 21px;
+    }
+
+    .info1{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .info1 img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .preco{
+        font-family: Poppins;
+        font-size: 35px;
+        color: #6e1e23;
+    }
+
+    /* Link */
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    /* BARRA DE ROLAGEM */
+    ::-webkit-scrollbar{
+        width: 10px; 
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: gray;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: lightgray;
+        border-radius: 50px;
+    }
+
+/* BOTAO WHATSAPP */
+    .wpp{
+    border-radius: 360px;
+    background-color: #32d951;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 830px;
+    left: 94%;
+    cursor: pointer;
+}
+
+.wpp:active{
+    transform: scale(0.90);
+}
+
+.wpp img{
+    width: 50px;
+    height: 50px;
+}
+/* ------------------------- */
+
+/* FILTRAGEM */
+
+.filtro{
+    margin-top: 250px;
+    margin-left: 40px;
+    width: 22%;
+    height: 228.5vh;
+    background-color: white;
+    border-radius: 20px;
+    border: 6px solid #6e1e23;
+} 
+
+.container1{
+    display: flex;
+}
+
+/* MARCAS */
+.marca{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caixa1{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border: 5px solid blue;
+    margin-top: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.escolhas{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escolhas input{
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: transform 0.8s ease-out;
+}
+
+.escolhas input:focus{
+    transform: scale(1.05);
+}
+
+#EscolherAno1{
+    margin-right: 30px;
+}
+
+/* TITULOS E SUBTITULOS */
+
+.titulos{
+    font-size: 14px;
+    margin-left: 28px;
+}
+
+.Subtitulos{
+    font-size: 11px;
+    margin-left: 28px;
+    color: gray;
+    margin-top: 15px;
+}
+
+/* --------------------- */
+
+/* BOTÕES ANO */
+.opcoes1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opcoes1 button{
+    width: 60px;
+    height: 30px;
+    border-radius: 360px;
+    margin-bottom: 15px;
+    transition: background-color 0.5s ease;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.opcoes1 button:focus{
+    background-color: red;
+    border: none;
+}
