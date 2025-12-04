@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CadastroEventos.MainPage"
+    Title="Cadastro de Evento">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <Label Text="Cadastro de Evento" FontSize="22" HorizontalOptions="Center" />
+
+            <Label Text="Nome" />
+            <Entry Text="{Binding Nome}" Placeholder="Nome do evento" />
+
+            <Label Text="Data Início" />
+            <DatePicker Date="{Binding DataInicio}" />
+
+            <Label Text="Data Término" />
+            <DatePicker Date="{Binding DataFim}" />
+
+            <Label Text="Número de Participantes" />
+            <Entry Text="{Binding NumeroParticipantes}" Keyboard="Numeric" />
+
+            <Label Text="Local" />
+            <Entry Text="{Binding Local}" Placeholder="Local do evento" />
+
+            <Label Text="Custo por participante" />
+            <Entry Text="{Binding CustoPorParticipante}" Keyboard="Numeric" />
+
+            <Button Text="Registrar" Clicked="OnRegistrarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
